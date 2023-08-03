@@ -1,11 +1,11 @@
 import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+  selector: 'app-carousel',
+  templateUrl: './carousel.component.html',
+  styleUrls: ['./carousel.component.scss'],
 })
-export class AppComponent implements AfterViewInit {
+export class CarouselComponent implements AfterViewInit {
   ngAfterViewInit(): void {
     const buttons = document.querySelectorAll('[data-carousel-button]');
 

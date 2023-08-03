@@ -1,0 +1,33 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--blue);
+    color: white;
+  }
+  .footer{
+    display: flex;
+    align-content: center;
+    justify-content: end;
+    padding: 10px;
+  }
+  .contact-icons{
+    padding-right: 10px;
+    font-size: 20px;
+
+  }
+  .contact-icons a{
+    color: rgb(255, 255, 255)
+   
+   }
+  .contact-icons i{
+    padding-right: 10px;
+    font-size: 30px;
+  }
+  .contact-icons i:hover{
+   color: var(--orange);
+   scale: (1.1);
+   transition: 2ms;
+  }
