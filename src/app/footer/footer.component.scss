@@ -1,33 +1,41 @@
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background-color: var(--blue);
-    color: white;
-  }
-  .footer{
-    display: flex;
-    align-content: center;
-    justify-content: end;
-    padding: 10px;
-  }
-  .contact-icons{
-    padding-right: 10px;
-    font-size: 20px;
+  background-color: var(--blue);
+  color: white;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: static;
+  color: rgb(242, 160, 7);
+}
 
+.contact-icons {
+  padding-right: 10px;
+  font-size: 20px;
+}
+.contact-icons a {
+  color: rgb(255, 255, 255);
+}
+.contact-icons i {
+  padding-right: 10px;
+  font-size: 30px;
+}
+.contact-icons i:hover {
+  color: var(--orange);
+  scale: (1.1);
+  transition: 2ms;
+}
+.footer-word-details,
+.footer-icon {
+  color: antiquewhite;
+}
+@media (max-width: 375px) {
+  .footer-contacts {
+    font-size: 0.15rem;
+    display: block !important;
+    width: 100% !important;
+    word-spacing: normal;
   }
-  .contact-icons a{
-    color: rgb(255, 255, 255)
-   
-   }
-  .contact-icons i{
-    padding-right: 10px;
-    font-size: 30px;
+  #footer-icons {
+    font-size: 0.1rem;
   }
-  .contact-icons i:hover{
-   color: var(--orange);
-   scale: (1.1);
-   transition: 2ms;
-  }
+}

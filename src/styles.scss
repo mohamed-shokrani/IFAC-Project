@@ -1,26 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
- :root {
-    --blue: #16133f;
-    --orange:#ed7204;
+:root {
+  --blue: #16133f;
+  --orange: #ed7204;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+}
+html {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+}
+body {
+  // min-height: 100% !important;
+  // display: flex;
+  // flex-direction: column;
+
+  font-family: "Noto Sans Arabic", sans-serif !important;
+  overflow-x: hidden;
+  ::-moz-selection {
+    color: white;
+    background: var(--orange);
   }
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+
+  ::selection {
+    color: white;
+    background: var(--orange);
   }
-  body{
-    // background-color: var(--blue) ;
-    font-family: 'Noto Sans Arabic', sans-serif;
-     height: 1000vh;
-    overflow-y: hidden;
-    ::-moz-selection { /* Code for Firefox */
-      color: white;
-      background:var(--orange);
-    }
-    
-    ::selection {
-      color: white;
-      background:var(--orange)
-    }
-  }
+}

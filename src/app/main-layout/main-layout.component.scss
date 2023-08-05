@@ -1,0 +1,211 @@
+.main {
+  padding-bottom: 5rem;
+}
+.card-img:hover {
+  transform: scale(1.8);
+  transition: 800ms;
+}
+
+.card-acc {
+  border-radius: 8px;
+  background-color: var(--orange);
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 45rem;
+  padding: 32px;
+  padding-left: 86px;
+  gap: 86px;
+  margin-top: 1rem;
+  margin-bottom: 6rem;
+  margin-left: 0.15rem;
+  ::-moz-selection {
+    color: rgb(255, 255, 255);
+    background: var(--blue) !important;
+    transform: scale(1.5);
+  }
+
+  ::selection {
+    color: rgb(255, 255, 255);
+    background: var(--blue) !important;
+    transform: scale(1.5);
+  }
+}
+// .testimonial-text {
+//   ::-moz-selection {
+//     color: rgb(255, 255, 255);
+//     background: var(--blue) !important;
+//   }
+
+//   ::selection {
+//     color: rgb(255, 255, 255);
+//     background: var(--blue) !important;
+//   }
+// }
+.card-img {
+  height: 9rem !important;
+  border-radius: 8px;
+  width: 120px;
+  transition: transform 0.8s ease;
+  box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+  transform: scale(2);
+}
+@media (max-width: 1534px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 40rem;
+    padding: 32px;
+    padding-left: 86px;
+    gap: 86px;
+    margin-top: 1rem;
+  }
+  .card-img {
+    height: 9rem !important;
+    border-radius: 8px;
+    width: 120px;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+}
+@media (max-width: 1292px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 40rem;
+    padding: 32px;
+    padding-left: 86px;
+    gap: 86px;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+    margin-top: 5rem;
+  }
+  .card-img {
+    height: 8rem !important;
+    border-radius: 8px;
+    width: 120px;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+}
+@media (max-width: 506px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 30rem;
+    max-height: 20rem;
+    padding: 32px;
+    padding-left: 75px;
+    gap: 80px;
+    margin-top: 5rem;
+    font-size: 0.5rem;
+  }
+  .card-img {
+    height: 9.2rem !important;
+    border-radius: 8px;
+    width: 120px;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+}
+
+@media (max-width: 450px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 30rem;
+    max-height: 20rem;
+    padding: 32px;
+    padding-left: 75px;
+    gap: 70px;
+    margin-top: 5rem;
+    font-size: 0.5rem;
+  }
+  .card-img {
+    height: 8.2rem !important;
+    border-radius: 8px;
+    width: 6rem;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+}
+
+@media (max-width: 406px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 30rem;
+    max-height: 20rem;
+    padding: 32px;
+    padding-left: 50px;
+    gap: 50px;
+    margin-top: 5rem;
+    font-size: 0.5rem;
+  }
+  .card-img {
+    height: 6rem;
+    border-radius: 8px;
+    width: 5rem;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+  .testimonial-text {
+    font-size: 0.1rem;
+  }
+}
+
+@media (max-width: 397px) {
+  .card-acc {
+    border-radius: 8px;
+    background-color: var(--orange);
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    max-width: 30rem;
+    max-height: 20rem;
+    padding: 32px;
+    padding-left: 50px;
+    gap: 50px;
+    margin-top: 5rem;
+    font-size: 0.5rem;
+  }
+  .card-img {
+    height: 6rem;
+    border-radius: 8px;
+    width: 5rem;
+
+    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+    transform: scale(2);
+  }
+  .testimonial-text {
+    font-size: 0.1rem;
+  }
+}
