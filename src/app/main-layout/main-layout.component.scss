@@ -5,8 +5,13 @@
   transform: scale(1.8);
   transition: 800ms;
 }
-
+.card-img {
+  transform: scale(1.8);
+  transition: 800ms;
+  box-shadow: -2px -1px 7px 0px rgb(97 97 97);
+}
 .card-acc {
+  box-shadow: -5px 12px 10px 1px rgb(97, 97, 97);
   border-radius: 8px;
   background-color: var(--orange);
   color: white;
@@ -33,179 +38,58 @@
     transform: scale(1.5);
   }
 }
-// .testimonial-text {
-//   ::-moz-selection {
-//     color: rgb(255, 255, 255);
-//     background: var(--blue) !important;
-//   }
-
-//   ::selection {
-//     color: rgb(255, 255, 255);
-//     background: var(--blue) !important;
-//   }
-// }
 .card-img {
   height: 9rem !important;
   border-radius: 8px;
   width: 120px;
   transition: transform 0.8s ease;
-  box-shadow: -2px -1px 7px 0px rgb(97 97 97);
   transform: scale(2);
 }
-@media (max-width: 1534px) {
-  .card-acc {
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 40rem;
-    padding: 32px;
-    padding-left: 86px;
-    gap: 86px;
-    margin-top: 1rem;
-  }
-  .card-img {
-    height: 9rem !important;
-    border-radius: 8px;
-    width: 120px;
+.card-img-top:hover {
+  width: 100% !important;
+  margin: 0;
+  transform: scale(1.02);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 255);
+  transition: 800ms;
+}
+.card-img-mobile {
+  height: 10rem;
+  width: 100%;
+  border-radius: 8px;
+}
+.card-mobile {
+  border-radius: 8px;
+  box-shadow: 0px 1px 19px 4px rgb(97, 97, 97);
 
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
+  height: 28rem;
+  background-color: var(--orange);
+  color: white;
+  margin: 1rem;
+}
+@media (min-width: 721px) {
+  .determin-max-size {
+    display: none;
   }
 }
-@media (max-width: 1292px) {
+@media (max-width: 720px) {
   .card-acc {
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 40rem;
-    padding: 32px;
-    padding-left: 86px;
-    gap: 86px;
-    margin-top: 1rem;
-    font-size: 0.5rem;
-    margin-top: 5rem;
-  }
-  .card-img {
-    height: 8rem !important;
-    border-radius: 8px;
-    width: 120px;
-
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
+    display: none;
   }
 }
-@media (max-width: 506px) {
-  .card-acc {
+@media (max-width: 575px) {
+  .card-img-mobile {
+    height: 10rem;
+    width: 100%;
     border-radius: 8px;
+  }
+  .card-mobile {
+    border-radius: 8px;
+    box-shadow: 0px 1px 19px 4px rgb(97, 97, 97);
+    width: 25rem !important;
+    height: 30rem !important;
     background-color: var(--orange);
     color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 30rem;
-    max-height: 20rem;
-    padding: 32px;
-    padding-left: 75px;
-    gap: 80px;
-    margin-top: 5rem;
-    font-size: 0.5rem;
-  }
-  .card-img {
-    height: 9.2rem !important;
-    border-radius: 8px;
-    width: 120px;
-
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
-  }
-}
-
-@media (max-width: 450px) {
-  .card-acc {
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 30rem;
-    max-height: 20rem;
-    padding: 32px;
-    padding-left: 75px;
-    gap: 70px;
-    margin-top: 5rem;
-    font-size: 0.5rem;
-  }
-  .card-img {
-    height: 8.2rem !important;
-    border-radius: 8px;
-    width: 6rem;
-
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
-  }
-}
-
-@media (max-width: 406px) {
-  .card-acc {
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 30rem;
-    max-height: 20rem;
-    padding: 32px;
-    padding-left: 50px;
-    gap: 50px;
-    margin-top: 5rem;
-    font-size: 0.5rem;
-  }
-  .card-img {
-    height: 6rem;
-    border-radius: 8px;
-    width: 5rem;
-
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
-  }
-  .testimonial-text {
-    font-size: 0.1rem;
-  }
-}
-
-@media (max-width: 397px) {
-  .card-acc {
-    border-radius: 8px;
-    background-color: var(--orange);
-    color: white;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    max-width: 30rem;
-    max-height: 20rem;
-    padding: 32px;
-    padding-left: 50px;
-    gap: 50px;
-    margin-top: 5rem;
-    font-size: 0.5rem;
-  }
-  .card-img {
-    height: 6rem;
-    border-radius: 8px;
-    width: 5rem;
-
-    box-shadow: -2px -1px 7px 0px rgb(97 97 97);
-    transform: scale(2);
-  }
-  .testimonial-text {
-    font-size: 0.1rem;
+    margin: 1rem;
   }
 }
