@@ -9,6 +9,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ServiceDetailsComponent } from './service-details/service-details.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     MainLayoutComponent,
     AboutUsComponent,
     ContactUsComponent,
+    ServiceDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

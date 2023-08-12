@@ -1,27 +1,53 @@
 <header>
-  
-    <div class="location-parent">
-        <i  class="fa-solid fa-location-dot location-icon"></i>
-      
-        
-         <p class="location-details">عمارة 20 ب عمارات الشمس الدور الاول - شارع مينا من ميدان الرماية أمام فندق مريوط مينا هاوس و معهد مينا للبريديات - الهرم - الجيزة
-         </p>
-       
-     </div>
-     
-     <div class="logo">
-       <img class="logo-image" src="../assets/images/logo.jpg"  alt="">
-     </div>
-   </header>
-   <nav class="">
-     <div class="header-info">
-      
-       
-        <a href="" routerLink="about"    class="header-links">ماذا عنا</a>
-        <a href="" routerLink="contacts" class="header-links">تواصل معنا</a>
-        <a href="" class="header-links">خدمات المحاسبة</a>
-        <a href="" class="header-links">الرئيسية</a>
-   
-     </div>
-    
-   </nav>
+  <div class="d-flex justify-content-around">
+    <div class="row">
+      <div class="location-parent col-6">
+        <i class="fa-solid fa-location-dot location-icon"></i>
+
+        <p class="location-details">
+          عمارة 20 ب عمارات الشمس الدور الاول - شارع مينا من ميدان الرماية أمام
+          فندق مريوط مينا هاوس و معهد مينا للبريديات - الهرم - الجيزة
+        </p>
+      </div>
+
+      <div class="logo col-6">
+        <div class="d-flex justify-content-end">
+          <img class="logo-image" src="../assets/images/logo.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<nav class="">
+  <div class="header-info">
+    <a
+      routerLink="about"
+      routerLinkActive="active"
+      class="header-links"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >ماذا عنا</a
+    >
+    <a
+      href=""
+      routerLink="contacts"
+      routerLinkActive="active"
+      class="header-links"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >تواصل معنا</a
+    >
+    <a
+      href="#accounting-services"
+      class="header-links"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >خدمات المحاسبة</a
+    >
+    <a
+      [routerLink]="['/']"
+      class="header-links"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >الرئيسية</a
+    >
+  </div>
+</nav>
