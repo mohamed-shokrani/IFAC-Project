@@ -10,6 +10,7 @@ import { MainLayoutComponent } from './main-layout/main-layout.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
+import { FinanceDetailsComponent } from './finance-details/finance-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ServiceDetailsComponent } from './service-details/service-details.compo
     AboutUsComponent,
     ContactUsComponent,
     ServiceDetailsComponent,
+    FinanceDetailsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
