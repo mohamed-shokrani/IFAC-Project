@@ -81,7 +81,7 @@
   visibility: hidden;
   position: absolute;
   font-weight: 600;
-  color: #f7f7f7;
+  color: rgb(72, 42, 42);
 }
 .services {
   text-align: center;
@@ -101,4 +101,14 @@
   .text-context h1 {
     font-size: 1rem;
   }
+}
+.show {
+  position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all 1.5s ease-in;
+}
+.show.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
