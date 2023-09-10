@@ -15,7 +15,6 @@ export class ServiceDetailsComponent implements OnInit, AfterViewInit {
   constructor(private renderer: Renderer2) {}
   ngAfterViewInit(): void {
     this.reveal();
-    console.log('ff');
   }
   ngOnInit(): void {}
   @HostListener('window:scroll')
