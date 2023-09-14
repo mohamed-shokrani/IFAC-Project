@@ -21,6 +21,7 @@
   border: none;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
   // background-image: linear-gradient(
   //   to left,
   //   #ed7104c7 10%,
@@ -57,8 +58,11 @@
   font-weight: 900;
   background-color: rgba(255, 166, 0, 0.63);
 }
+.card:hover img {
+  filter: blur(2px);
+}
 .card:hover .intro {
-  height: 170px;
+  height: 180px;
   color: rgb(10, 7, 7);
   text-align: center;
   padding: 10px 0;

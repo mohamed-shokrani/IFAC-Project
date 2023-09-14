@@ -7,16 +7,17 @@
 }
 .contact {
   margin-left: 1rem;
+  margin-bottom: 0;
 }
 .contact-icon svg {
   font-size: 50rem;
 }
 .main {
-  margin-top: 7rem;
+  margin-top: 1rem;
   justify-content: space-between;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 5rem;
+  grid-template-columns: 70%;
+  justify-content: center;
 }
 .form {
   display: flex;
@@ -129,12 +130,103 @@
   font-weight: 900;
   margin-left: 1rem;
 }
-.img-contact {
-  max-width: 100%;
-  max-height: 363px;
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  margin: 1rem auto;
 }
-.imag-container {
-  max-height: 363px;
+.main-container h2 {
+  direction: rtl;
+  margin: 0;
+}
+div p strong {
+  margin-left: 1rem;
+  color: var(--orange);
+}
+div p {
+  margin-left: 1rem;
+  color: var(--orange);
+  font-weight: 800;
+  direction: rtl;
+}
+.main-content {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+.animated_main_header {
+  // display: flex;
+  // justify-content: center;
+}
+.anim-text[data-v-e7cc1b5f] {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 2rem;
+  color: var(--blue);
+  display: inline-block;
+  position: relative;
+}
+.anim-text[data-v-e7cc1b5f]::after {
+  content: "";
+  max-width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: fade-e7cc1b5f 4s ease-in-out infinite;
+  background-color: var(--orange);
+  position: absolute;
+}
+.anim-text__top[data-v-e7cc1b5f] {
+  position: relative;
+  z-index: 1;
+  display: block;
+  animation: hlop-e7cc1b5f 4s ease-in-out infinite;
+}
+.hero__title {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+.anim-text__bottom[data-v-e7cc1b5f] {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  display: block;
+  opacity: 0;
+  animation: fade-e7cc1b5f 4s ease-in-out infinite;
+}
+@keyframes hlop-e7cc1b5f {
+  0% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+  30% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  70% {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  100% {
+    clip-path: polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%);
+  }
+}
+@keyframes fade-e7cc1b5f {
+  0% {
+    /* opacity: 0; */
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .contact-links {
@@ -171,9 +263,75 @@
 .map-details h2 {
   color: var(--orange);
 }
+
+.contact-new {
+  margin: 2rem;
+}
+.contact-new a {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+
+  overflow: hidden;
+  border: 1px solid #271c3f;
+  z-index: 1;
+}
+.contact-new a:hover::before {
+  top: 0;
+  z-index: 2;
+}
+.contact-new a:hover i {
+  animation: spin;
+  color: #fff;
+  z-index: 5000;
+  transform: rotateY(360deg);
+}
+.contact-new a::before {
+  content: "";
+  transition: 1s ease;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #271c3f;
+  width: 100%;
+  height: 100%;
+  background-color: #271c3f;
+  z-index: 2;
+}
+.contact-new a i {
+  position: relative;
+  color: #271c3f;
+  transition: 0.5s;
+  z-index: 10000;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.map-details p {
+  color: rgb(229, 229, 226);
+}
 @media (max-width: 1200px) {
   .main {
-    margin-top: 7rem;
     justify-content: space-between;
     display: grid;
     grid-template-columns: 1fr;
@@ -181,10 +339,28 @@
     margin: auto;
     max-width: 500px;
     justify-content: space-evenly;
-    margin-top: 5rem;
+    margin-top: 1rem;
+  }
+  .animated_main_header span {
+    font-size: 1.1rem;
   }
   .img-contact {
     max-height: 363px;
+  }
+  .map-details {
+    max-width: 300px;
+  }
+}
+@media (max-width: 900px) {
+  .map-details {
+    max-width: 200px;
+  }
+  .map-details h2 {
+    font-size: 0.7rem;
+  }
+  .map-details p {
+    font-size: 0.5rem;
+    color: beige;
   }
 }
 @media (max-width: 640) {

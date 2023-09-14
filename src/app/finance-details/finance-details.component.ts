@@ -5,6 +5,7 @@ import {
   HostListener,
   OnInit,
 } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-finance-details',
@@ -12,36 +13,15 @@ import {
   styleUrls: ['./finance-details.component.scss'],
 })
 export class FinanceDetailsComponent implements AfterViewInit {
-  /**
-   *
-   */
-  /**
-   *
-   */
-  constructor(private renderer: Renderer2) {}
+  constructor(private renderer: Renderer2, private router: Router) {}
 
   ngAfterViewInit(): void {
     this.reveal();
     window.addEventListener('scroll', this.reveal);
   }
-
-  // revealAll() {
-  //   let reveals = document.querySelectorAll('.forAll');
-  //   let WindowHeights = window.innerHeight;
-  //   console.log(reveals.length);
-
-  //   console.log(reveals);
-  //   for (let i = 0; i < reveals.length; i++) {
-  //     let WindowHeight = window.innerHeight;
-  //     let revealTop = reveals[i].getBoundingClientRect().top;
-  //     let revealPoint = 150;
-  //     if (revealTop < WindowHeight - revealPoint) {
-  //       reveals[i].classList.add('active');
-  //     } else {
-  //       reveals[i].classList.remove('active');
-  //     }
-  //   }
-  // }
+  ShowProductDetails(id: number) {
+    this.router.navigate(['/details', id]);
+  }
   @HostListener('window:scroll')
   reveal(): void {
     const reveals = document.querySelectorAll('.show');

@@ -11,7 +11,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 import { FinanceDetailsComponent } from './finance-details/finance-details.component';
-import { GoogleMapsModule } from '@angular/google-maps';
+import { GetFinancDetailsComponent } from './get-financ-details/get-financ-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +23,9 @@ import { GoogleMapsModule } from '@angular/google-maps';
     ContactUsComponent,
     ServiceDetailsComponent,
     FinanceDetailsComponent,
+    GetFinancDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
