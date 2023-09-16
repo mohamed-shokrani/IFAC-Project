@@ -1,14 +1,60 @@
-<header>
+<!-- <header>
   <div class="row">
     <div class="d-flex justify-content-start">
       <div class="text-bg-danger"></div>
-      <img class="logo-image" src="../assets/images/logo.jpg" alt="" />
+      <img class="logo-image" src="../assets/images/logo.jpg" alt="logo" />
     </div>
   </div>
-</header>
-<nav class="">
-  <div class="header-info">
+</header> -->
+<!-- <header class="navabr">
+  <nav class="nav-holder">
+    <div class="header-info">
+      <a
+        aria-hidden="true"
+        routerLink="about"
+        routerLinkActive="active"
+        class="header-links"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >ماذا عنا</a
+      >
+      <a
+        aria-hidden="true"
+        routerLink="contacts"
+        routerLinkActive="active"
+        class="header-links"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >تواصل معنا</a
+      >
+      <a
+        aria-hidden="true"
+        href="#accounting-services"
+        class="header-links"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >خدمات المحاسبة</a
+      >
+      <a
+        [routerLink]="['/']"
+        class="header-links"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >الرئيسية</a
+      >
+    </div> -->
+<!-- <div class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div> -->
+<!-- <div class="logo-image">
+      <img class="logo-image" src="../assets/images/logo.jpg" alt="logo" />
+    </div>
+  </nav>
+</header> -->
+<header class="navbar">
+  <nav id="nav">
     <a
+      aria-hidden="true"
       routerLink="about"
       routerLinkActive="active"
       class="header-links"
@@ -16,7 +62,7 @@
       >ماذا عنا</a
     >
     <a
-      href=""
+      aria-hidden="true"
       routerLink="contacts"
       routerLinkActive="active"
       class="header-links"
@@ -24,6 +70,7 @@
       >تواصل معنا</a
     >
     <a
+      aria-hidden="true"
       href="#accounting-services"
       class="header-links"
       routerLinkActive="active"
@@ -37,5 +84,11 @@
       [routerLinkActiveOptions]="{ exact: true }"
       >الرئيسية</a
     >
+  </nav>
+  <div class="right">
+    <button class="hamburger" id="hamburger" (click)="show()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <img class="logo-img" src="../assets/images/logo.jpg" alt="logo" />
   </div>
-</nav>
+</header>

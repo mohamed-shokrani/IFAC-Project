@@ -72,3 +72,67 @@ ol {
 .left {
   margin-right: 2rem;
 }
+@media (max-width: 720px) {
+  li {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.4rem;
+  }
+  h2::after {
+    right: -5%;
+  }
+  h2::before {
+    left: -5%;
+  }
+}
+@media (max-width: 580px) {
+  li {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h2::after {
+    right: -10%;
+  }
+  h2::before {
+    left: -10%;
+  }
+}
+@media (max-width: 420px) {
+  li {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h2::after {
+    right: -20%;
+  }
+  h2::before {
+    left: -20%;
+  }
+}
+@media (max-width: 300px) {
+  li {
+    font-size: 1rem;
+    line-height: 2rem;
+    margin: 0;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  h2::after {
+    right: -30%;
+  }
+  h2::before {
+    left: -30%;
+  }
+}

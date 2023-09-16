@@ -1,16 +1,19 @@
+import { NgOptimizedImage } from '@angular/common';
 import {
   AfterViewInit,
   Renderer2,
   Component,
   HostListener,
-  OnInit,
 } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
+  standalone: true,
+
   selector: 'app-finance-details',
   templateUrl: './finance-details.component.html',
   styleUrls: ['./finance-details.component.scss'],
+  imports: [NgOptimizedImage],
 })
 export class FinanceDetailsComponent implements AfterViewInit {
   constructor(private renderer: Renderer2, private router: Router) {}

@@ -12,20 +12,28 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { ServiceDetailsComponent } from './service-details/service-details.component';
 import { FinanceDetailsComponent } from './finance-details/finance-details.component';
 import { GetFinancDetailsComponent } from './get-financ-details/get-financ-details.component';
+import { AboutUsRoutingModule } from './about-us/about-us-routing.module';
+import { FinanceDetailsRoutingModule } from './finance-details/finance-details-routing.module';
+import { MainLayoutRoutingModule } from './main-layout/main-layout-routing.module';
+import { CarouselRoutingModule } from './carousel/carousel-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CarouselComponent,
-    MainLayoutComponent,
-    AboutUsComponent,
+
     ContactUsComponent,
     ServiceDetailsComponent,
-    FinanceDetailsComponent,
     GetFinancDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    AboutUsRoutingModule,
+    FinanceDetailsRoutingModule,
+    MainLayoutRoutingModule,
+    CarouselRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
